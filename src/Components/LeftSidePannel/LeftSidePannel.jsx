@@ -9,11 +9,11 @@ const LeftSidePannel = ({ handleClick,handleUserIdClicked, id, groupName, color,
 
   // Getting stored data
   const storedDataString = localStorage.getItem("groupNamesData");
-  // const storedData = useMemo(()=>JSON.parse(storedDataString) || [storedDataString],[storedDataString]) ;
-  const storedData = useMemo(() => {
-    const data = JSON.parse(storedDataString);
-    return Array.isArray(data) ? data : [];
-}, [storedDataString]);
+  const storedData = useMemo(()=>JSON.parse(storedDataString) || [storedDataString],[storedDataString]) ;
+//   const storedData = useMemo(() => {
+//     const data = JSON.parse(storedDataString);
+//     return Array.isArray(data) ? data : [];
+// }, [storedDataString]);
   // changing id
   // const newId =
   //   storedData.length > 0 ? storedData[storedData.length - 1].id + 1 : 1;
